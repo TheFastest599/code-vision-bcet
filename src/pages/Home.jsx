@@ -342,7 +342,7 @@ export default function Home() {
         {/* Next Event Section */}
         <section className="section-container">
           <h2 className="text-2xl font-bold mb-6 md:flex-row md:max-w-4xl md:mx-auto">
-            Next Event
+            Ongoing Event
           </h2>
           <motion.div
             ref={inViewRefs.current.event}
@@ -375,14 +375,15 @@ export default function Home() {
                 >
                   Details
                 </button>
-                <button
+                {/* Registration Button */}
+                {/* <button
                   className="text-sm  px-4 py-2  rounded-lg cursor-pointer bg-blue-500 hover:bg-blue-600 transition-colors"
                   onClick={() => {
                     window.open(nextEvent.registrationLink, '_blank');
                   }}
                 >
                   Register
-                </button>
+                </button> */}
               </div>
             </div>
           </motion.div>
