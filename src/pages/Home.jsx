@@ -7,7 +7,6 @@ import Modal from '../components/Modal';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { globalContext } from '../context/globalContext';
 import NumberAnimation from '../components/NumberAnimatio';
-import { title } from 'framer-motion/client';
 
 export default function Home() {
   document.title = 'CODE VISION - An adobe for coders';
@@ -47,6 +46,7 @@ export default function Home() {
   createInViewHook('section5', { triggerOnce: true });
   createInViewHook('section6', { triggerOnce: true });
   createInViewHook('event', { triggerOnce: true });
+  createInViewHook('eventDetails', { triggerOnce: true });
   createInViewHook('video', { triggerOnce: false });
 
   const videoRef = useRef(null);
@@ -195,38 +195,152 @@ export default function Home() {
   ];
 
   const nextEvent = {
-    name: 'PYTHON BOOTCAMP 2025',
-    ref: 'pythonBootcamp',
+    name: 'CONSOLE 2025',
+    ref: 'console',
     details: {
-      targetAudience: 'First and second year students',
-      objective: 'Introduce Python programming basics through hands-on coding.',
+      targetAudience: 'All Undergraduate Students',
+      objective:
+        'Console offers a rich experience, blending competition with learning and community-building across multiple skill domains.',
       description:
-        'Join us for the Python Bootcamp, a 3-day event designed for first and second-year students to introduce Python programming basics through hands-on coding. The bootcamp includes key Python topics, practical exercises, Q&A sessions, and peer collaboration. Additional support and resources will be provided.',
-      duration: '3 days',
-      date: '12 - 14 August 2025',
-      agenda: [
-        'Introduction: Overview of Python and its applications.',
-        'Basic Data Types: Numbers, strings, and variables.',
-        'Functions: Defining and using functions in Python.',
-        'Control Flow: If-else statements, loops, and logical operators.',
-        'Data Structures: Lists, tuples, dictionaries, and sets.',
-        'OOPS: Object-Oriented Programming concepts in Python.',
-        'Project: Build a mini Python application to apply the concepts learned.',
-        'Hands-on Exercises: Practical coding tasks for each topic.',
-        'Q&A & Peer Collaboration: Address questions, troubleshoot, and collaborate.',
-        'Wrap-Up & Feedback: Recap, gather feedback, and share resources.',
-      ],
-      extras: [
-        'Support team for assistance.',
-        'Handouts and resource links.',
-        'Option for continued learning via a follow-up Q&A and networking.',
-      ],
+        'Unleashing Skills, Celebrating Diversity — Console 2025 is a multi-day fest designed to engage undergraduates in an exciting array of events ranging from logical challenges and gaming to creative arts and technical contests. This unique platform encourages skill development, creativity, and collaboration, all while competing for exciting prizes. With something for everyone, the event promises a vibrant mix of learning, competition, and fun.',
+      duration: '4-5 days',
+      date: '10 - 14 May 2025',
     },
     registrationLink:
-      'https://docs.google.com/forms/d/e/1FAIpQLSc4BDru-xszxHeXYUPrHUgoFd8kAOhNRTo4g46D04yLR_BTew/viewform',
+      'https://docs.google.com/forms/d/e/1FAIpQLSffeUM_SgPja6d71JCAuOUrNPrS1rBa2xrvoLlvuVli8LZQsg/viewform',
     poster:
-      'https://res.cloudinary.com/debt9pcvr/image/upload/v1744142016/WhatsApp_Image_2025-04-09_at_01.05.32_8b9035dc_d9nk43.jpg',
+      'https://res.cloudinary.com/debt9pcvr/image/upload/v1745990761/console_2k25_ysznh3.jpg',
   };
+
+  // Next Event Details
+  const nextEventDetails = [
+    {
+      name: 'Algorithm Anarchy',
+      description:
+        'Code like chaos is your language! Bring your best logic and dominate the world of algorithms in this battle of brains.',
+      poster:
+        'https://res.cloudinary.com/debt9pcvr/image/upload/v1746209022/1_y2sano.png',
+    },
+    {
+      name: 'Code Domination',
+      description:
+        'Outcode, outwit, outlast—this is your stage. Write flawless logic and rise above the rest to seize digital domination.',
+      poster:
+        'https://res.cloudinary.com/debt9pcvr/image/upload/v1746209064/1_w0wlsr.png',
+    },
+    {
+      name: 'Operation Debug',
+      description:
+        'Bugs beware—the debugger has entered the zone. Sharpen your skills and fix the flaws before time runs out.',
+      poster:
+        'https://res.cloudinary.com/debt9pcvr/image/upload/v1746209147/1_zuvnf0.png',
+    },
+    {
+      name: 'UI Arena',
+      description:
+        ' Where creativity meets functionality, and pixels form poetry. Design sleek interfaces that captivate at first glance.',
+      poster:
+        'https://res.cloudinary.com/debt9pcvr/image/upload/v1746209227/1_rcno2q.png',
+    },
+    {
+      name: 'Battle of Crowns',
+      description:
+        'Checkmate your way to the top! Master the board, plan your moves, and become the undisputed chess champion.',
+      poster:
+        'https://res.cloudinary.com/debt9pcvr/image/upload/v1746209043/1_br3lkv.png',
+    },
+    {
+      name: "Rubik's Rumble",
+      description:
+        'It’s not just a cube—it’s a mental battlefield. Race against time and twist your way to glory!',
+      poster:
+        'https://res.cloudinary.com/debt9pcvr/image/upload/v1746209170/1_o9bwq6.png',
+    },
+    {
+      name: 'Sudoku',
+      description:
+        'A battle of logic, focus, and numbers. Solve the grid and prove your precision under pressure!',
+      poster:
+        'https://res.cloudinary.com/debt9pcvr/image/upload/v1746209193/1_bziyyb.png',
+    },
+    {
+      name: 'BGMI',
+      description:
+        'Drop in, gear up, and unleash havoc. Only the sharpest reflexes and deadliest aim will win the chicken dinner!',
+      poster:
+        'https://res.cloudinary.com/debt9pcvr/image/upload/v1746209053/1_urdtaw.png',
+    },
+    {
+      name: 'Free Fire',
+      description:
+        'Get locked, loaded, and fired up for battle. Rule the zone and survive till the last breath!',
+      poster:
+        'https://res.cloudinary.com/debt9pcvr/image/upload/v1746209089/1_pg4kgc.png',
+    },
+    {
+      name: 'Lens & Aura',
+      description:
+        'Capture moments that speak louder than words. Let your lens narrate a visual story full of emotion and elegance.',
+      poster:
+        'https://res.cloudinary.com/debt9pcvr/image/upload/v1746209113/1_vmw90a.png',
+    },
+    {
+      name: 'Meme Royal',
+      description:
+        'Unleash your inner memelord—where wit meets wild imagination. Let your humor go viral and battle it out in the ultimate meme war!',
+      poster:
+        'https://res.cloudinary.com/debt9pcvr/image/upload/v1746209128/1_gsw7iu.png',
+    },
+    {
+      name: 'Knowledge Knockout',
+      description:
+        "Bring your A-game to this brain brawl! It's not just what you know—it's how fast and sharp you are.",
+      poster:
+        'https://res.cloudinary.com/debt9pcvr/image/upload/v1746209096/1_m5wg4i.png',
+    },
+    {
+      name: 'Talk The Talk',
+      description:
+        'Persuade, argue, and ignite conversations that matter. Speak with passion and leave your mark on every word.',
+      poster:
+        'https://res.cloudinary.com/debt9pcvr/image/upload/v1746209205/1_sku5qx.png',
+    },
+    {
+      name: 'Pitch Perfect',
+      description:
+        'One minute. One idea. One shot to shine. Deliver a pitch that leaves the crowd and judges speechless!',
+      poster:
+        'https://res.cloudinary.com/debt9pcvr/image/upload/v1746209161/1_wqlfz9.png',
+    },
+    {
+      name: 'Fonts of Fire',
+      description:
+        'Let your calligraphy blaze across the page. Ink each stroke with style, grace, and a touch of fire.',
+      poster:
+        'https://res.cloudinary.com/debt9pcvr/image/upload/v1746209076/1_pzyeau.png',
+    },
+    {
+      name: 'The Pixel Tale',
+      description:
+        'Every frame is a story waiting to be told. Craft a cinematic journey that stays etched in hearts and minds.',
+      poster:
+        'https://res.cloudinary.com/debt9pcvr/image/upload/v1746209218/1_rc6nmj.png',
+    },
+    {
+      name: 'Apti Arena',
+      description:
+        'Quick thinking meets calculated logic in this ultimate aptitude test. Outsmart the clock and the competition alike!',
+      poster:
+        'https://res.cloudinary.com/debt9pcvr/image/upload/v1746209030/1_oxtnaw.png',
+    },
+    {
+      name: 'Seminar',
+      description:
+        'A gathering of ideas, innovation, and inspiration. Hear from minds that spark change and light the future.',
+      poster:
+        'https://res.cloudinary.com/debt9pcvr/image/upload/v1746209182/1_i30hvy.png',
+    },
+  ];
 
   return (
     <>
@@ -342,7 +456,7 @@ export default function Home() {
         {/* Next Event Section */}
         <section className="section-container">
           <h2 className="text-2xl font-bold mb-6 md:flex-row md:max-w-4xl md:mx-auto">
-            Ongoing Event
+            Upcoming Event
           </h2>
           <motion.div
             ref={inViewRefs.current.event}
@@ -376,16 +490,57 @@ export default function Home() {
                   Details
                 </button>
                 {/* Registration Button */}
-                {/* <button
+                <button
                   className="text-sm  px-4 py-2  rounded-lg cursor-pointer bg-blue-500 hover:bg-blue-600 transition-colors"
                   onClick={() => {
                     window.open(nextEvent.registrationLink, '_blank');
                   }}
                 >
                   Register
-                </button> */}
+                </button>
               </div>
             </div>
+          </motion.div>
+        </section>
+
+        {/* Next Event Details Section */}
+        <section className=" section-container">
+          <motion.div
+            ref={inViewRefs.current.eventDetails}
+            initial="hidden"
+            animate={inViewStates.eventDetails ? 'visible' : 'hidden'}
+            variants={cardVariants}
+            className="carousel-container"
+          >
+            <Carousel showThumbs={false} autoPlay infiniteLoop>
+              {nextEventDetails.map((event, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col items-center bg-white/5 rounded-lg shadow-sm md:flex-row md:max-w-4xl md:mx-auto"
+                >
+                  {/* Image Section */}
+                  <img
+                    src={event.poster}
+                    alt={event.name}
+                    className="object-contain w-full max-h-[55vh] md:w-96 rounded-t-lg md:rounded-none md:rounded-s-lg"
+                  />
+
+                  {/* Text Section */}
+                  <div className="flex flex-col justify-between p-4 leading-normal text-start">
+                    <h3 className="text-2xl font-bold mb-2">{event.name}</h3>
+                    <p className="text-sm text-gray-300">{event.description}</p>
+                    <button
+                      className="text-sm my-4 px-4 py-2 w-32 rounded-lg cursor-pointer bg-blue-500 hover:bg-blue-600 transition-colors"
+                      onClick={() => {
+                        window.open(nextEvent.registrationLink, '_blank');
+                      }}
+                    >
+                      Register
+                    </button>
+                  </div>
+                </div>
+              ))}
+            </Carousel>
           </motion.div>
         </section>
 

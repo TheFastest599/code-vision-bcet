@@ -130,27 +130,30 @@ export default function Events() {
           'Skill-specific performance, creativity, and engagement.',
         prizes: 'Trophies, badges, and participation certificates.',
         subEvents: [
-          'Battle of Kings - Chess competition',
-          'Cube Clash - Rubik’s Cube solving',
+          'Battle of Crowns - Chess competition',
+          "Ruik's Rumble - Rubik’s Cube solving",
           'Sudoku - Logic puzzles',
           'BGMI - Team mobile gaming',
-          'Brain Quest - Reasoning challenges',
+          'Free Fire - Team mobile gaming',
+          'Knowledge Knockout - Reasoning challenges',
           'Tug of Words War - Group discussions',
           'Minute Showdown - Extempore speeches',
+          'Algorithm Anarchy - DSA competition',
+          'Code Domination - Coding contest',
+          'Operation: Debug - Debugging challenge',
+          'UI Arena - UI/UX design',
+          'Lens & Aura - Photography',
+          'Meme Royal - Meme creation',
+          'Fonts of Fire - Handwriting contest',
+          'The pixel tale - Short video creation',
+          'Apti Arena - Aptitude quiz',
           'Seminar - Guest lectures',
-          'Algorithm Arena - DSA competition',
-          'Code Crush - Coding contest',
-          'Squash the Bug - Debugging challenge',
-          'War of UI Lens - UI/UX design',
-          'Lens Legacy - Photography',
-          'Meme Madness - Meme creation',
-          'Inked Elegance - Handwriting contest',
-          'Pixel Story - Short video creation',
-          'Apti Quest - Aptitude quiz',
         ],
       },
       poster:
-        'https://res.cloudinary.com/debt9pcvr/image/upload/v1731569975/Snapinsta.app_437011241_926108512583853_8074732097363179100_n_1080_bd8rlt.jpg',
+        'https://res.cloudinary.com/debt9pcvr/image/upload/v1745990761/console_2k25_ysznh3.jpg',
+      registrationLink:
+        'https://docs.google.com/forms/d/e/1FAIpQLSffeUM_SgPja6d71JCAuOUrNPrS1rBa2xrvoLlvuVli8LZQsg/viewform',
     },
   ];
 
@@ -507,6 +510,15 @@ export default function Events() {
                     <h3 className="font-semibold mb-2">Prizes</h3>
                     <p className="opacity-80">{events[4].details.prizes}</p>
                   </div>
+                  {/* Registration Button */}
+                  <button
+                    className="text-sm  px-4 py-2  rounded-lg cursor-pointer bg-blue-500 hover:bg-blue-600 transition-colors"
+                    onClick={() => {
+                      window.open(events[4].registrationLink, '_blank');
+                    }}
+                  >
+                    Register
+                  </button>
                 </div>
               </div>
             </div>
