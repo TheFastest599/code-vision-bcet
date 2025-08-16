@@ -84,15 +84,21 @@ const leadership = [
   },
   {
     position: 'SCO',
-    name: 'Amit Kumar Mondal (CSE)',
+    name: 'Sanjeevan Nag (IT)',
     photo:
-      'https://res.cloudinary.com/debt9pcvr/image/upload/v1731506697/WhatsApp_Image_2024-11-13_at_11.05.45_21353061_z4zuos.jpg',
+      'https://res.cloudinary.com/debt9pcvr/image/upload/v1755325582/IMG_20230107_142053_735_2_1_gamg2f.jpg',
   },
   {
     position: 'Joint SCO',
-    name: 'Sukriti Priya (IT)',
+    name: 'Mayank Rana (CSE)',
     photo:
-      'https://res.cloudinary.com/debt9pcvr/image/upload/v1731506697/WhatsApp_Image_2024-11-13_at_15.45.59_3e78d4f5_voqtso.jpg',
+      'https://res.cloudinary.com/debt9pcvr/image/upload/v1755325581/IMG-20250606-WA0228_1_ullpsy.jpg',
+  },
+  {
+    position: 'Joint SCO',
+    name: 'Priyabrata Dey (IT)',
+    photo:
+      'https://res.cloudinary.com/debt9pcvr/image/upload/v1755325583/1000225728_1_ltpudy.jpg',
   },
 ];
 

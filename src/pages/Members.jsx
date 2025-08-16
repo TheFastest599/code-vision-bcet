@@ -6,34 +6,6 @@ export default function Members() {
   document.title = 'Members | CODE VSION';
   const members = {
     governors: [
-      { name: 'Aditya Kumar ', branch: 'CSE' },
-      { name: 'Ahana Mandal', branch: 'CSE' },
-      { name: 'Amit Kumar Mondal', branch: 'CSE' },
-      { name: 'Anish Jaiswal', branch: 'CSE' },
-      { name: 'Ankur Dixit', branch: 'IT' },
-      { name: 'Anshu Raj', branch: 'CSE' },
-      { name: 'Arpana Kumari', branch: 'IT' },
-      { name: 'Bajrang Kumar', branch: 'CSE' },
-      { name: 'Bijay Kumar Yadav', branch: 'CSE' },
-      { name: 'Harsh Thakur', branch: 'IT' },
-      { name: 'Md Navil Ahmad', branch: 'CSE' },
-      { name: 'Mohammad Rashid Anwar', branch: 'IT' },
-      { name: 'Sahil Singh', branch: 'CSE' },
-      { name: 'Sania Kumari', branch: 'CSE' },
-      { name: 'Satyam Durgesh', branch: 'CSE' },
-      { name: 'Shyam Kumar Sahu', branch: 'CSE' },
-      { name: 'Siddhartha Kar', branch: 'CSE' },
-      { name: 'Sonal Tiwary', branch: 'CSE' },
-      { name: 'Sonu Kumar Ranjan', branch: 'CSE' },
-      { name: 'Soumik Mukherjee', branch: 'CSE' },
-      { name: 'Subhendu Singh', branch: 'IT' },
-      { name: 'Sukriti Priya', branch: 'IT' },
-      { name: 'Suman Kumar Rawani', branch: 'IT' },
-      { name: 'Swati Sharma', branch: 'CSE' },
-      { name: 'Sweta Yadav', branch: 'CSE' },
-      { name: 'Ujjayini Majhi', branch: 'IT' },
-    ],
-    organizers: [
       { name: 'Abhimanyu Singh', branch: 'CSE' },
       { name: 'Anirban Saha', branch: 'CSE' },
       { name: 'Arnab Mukherjee', branch: 'CSE' },
@@ -59,7 +31,7 @@ export default function Members() {
       { name: 'Sayan Mukherjee ', branch: 'CSE' },
       { name: 'Smriti', branch: 'IT' },
     ],
-    coordinators: [
+    organizers: [
       { name: 'Aaryan Suman', branch: 'CSE' },
       { name: 'Anand Kumar', branch: 'CSE' },
       { name: 'Anand Raj', branch: 'CSE' },
@@ -90,6 +62,7 @@ export default function Members() {
       { name: 'Vivek Kumar', branch: 'CSE' },
       { name: 'Vivek Kumar Gupta', branch: 'CSE' },
     ],
+    coordinators: [],
   };
 
   const MemberTable = ({ title, members }) => (
@@ -129,10 +102,10 @@ export default function Members() {
           title="Organizers (3rd Year)"
           members={members.organizers}
         />
-        <MemberTable
+        {/* <MemberTable
           title="Coordinators (2nd Year)"
           members={members.coordinators}
-        />
+        /> */}
       </div>
     </div>
   );

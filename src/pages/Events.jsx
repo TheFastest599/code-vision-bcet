@@ -511,14 +511,14 @@ export default function Events() {
                     <p className="opacity-80">{events[4].details.prizes}</p>
                   </div>
                   {/* Registration Button */}
-                  <button
+                  {/* <button
                     className="text-sm  px-4 py-2  rounded-lg cursor-pointer bg-blue-500 hover:bg-blue-600 transition-colors"
                     onClick={() => {
                       window.open(events[4].registrationLink, '_blank');
                     }}
                   >
                     Register
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
