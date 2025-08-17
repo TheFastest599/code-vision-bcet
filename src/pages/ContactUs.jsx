@@ -14,8 +14,8 @@ export default function ContactUs() {
     {
       icon: FaPhone,
       title: 'Phone',
-      content: '+91 9382731364 (SCO)',
-      link: 'tel:+919382731364',
+      content: '+91 6299059583 (SCO)',
+      link: 'tel:+6299059583',
     },
     {
       icon: FaMapMarkerAlt,

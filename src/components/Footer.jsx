@@ -48,8 +48,8 @@ export default function Footer() {
     {
       icon: FaPhone,
       title: 'Phone',
-      number: '+91 9382731364',
-      href: 'tel:+919382731364',
+      number: '+91 6299059583',
+      href: 'tel:+916299059583',
     },
   ];
 
