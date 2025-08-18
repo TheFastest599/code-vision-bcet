@@ -187,11 +187,10 @@ export default function Home() {
   const orientation =
     'Welcome to CODE VISION! Our orientation program is designed to introduce you to the club, its members, and the various activities we offer. Join us to learn more about our mission, vision, and upcoming events.';
   const membersPhotos = [
-    'https://res.cloudinary.com/debt9pcvr/image/upload/v1731427424/IMG-20241111-WA0058_g35v0i.jpg',
-    'https://res.cloudinary.com/debt9pcvr/image/upload/v1731425180/IMG-20241111-WA0016_b8iobd.jpg',
-    'https://res.cloudinary.com/debt9pcvr/image/upload/v1731427421/IMG-20241111-WA0057_bfqxcl.jpg',
-    'https://res.cloudinary.com/debt9pcvr/image/upload/v1741936932/WhatsApp_Image_2025-03-14_at_02.12.08_ef762af3_bmurl1.jpg',
-    'https://res.cloudinary.com/debt9pcvr/image/upload/v1731427454/IMG-20241111-WA0095_ygvzhd.jpg',
+    'https://res.cloudinary.com/debt9pcvr/image/upload/v1755517185/IMG_20250514_172804_ki2qzk.jpg',
+    'https://res.cloudinary.com/debt9pcvr/image/upload/v1755517187/IMG20250615180041_rvnqv2.jpg',
+    'https://res.cloudinary.com/debt9pcvr/image/upload/v1755517186/IMG_20250510_180549_fpdaxh.jpg',
+    'https://res.cloudinary.com/debt9pcvr/image/upload/v1755517186/IMG_20250514_173007_ykfdbt.jpg',
   ];
 
   const nextEvent = {
